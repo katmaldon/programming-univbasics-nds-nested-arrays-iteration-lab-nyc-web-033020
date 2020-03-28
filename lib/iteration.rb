@@ -9,14 +9,8 @@ def join_ingredients(src)
 end
 
 def find_greater_pair(src)
-  new_array = []
-  i = 0 
-  
-  while i < src.length do
-    new_array.push(src[i].max)
-    i += 1
-  end
-  new_array
+  src = [ :group1[1, 5] :group2[34,11]]
+  srcg = [group1.max, group2.max]
 end
 
 def total_even_pairs(src)
