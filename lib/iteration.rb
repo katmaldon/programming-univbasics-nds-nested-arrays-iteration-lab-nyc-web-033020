@@ -1,6 +1,13 @@
 def join_ingredients(src)
- foods=[ ["cheese", "no cheese"], ["grilled chicken", "pepperoni"]
-  puts ('I love my pizza with' + array[0] + "and"+ array[1])
+faves = []
+
+row_index = 0
+while row_index < src.count do
+  inner = src[row_index]
+faves << "I love #{inner[0]} and #{inner[1]} on my pizza"
+row_index += 1
+end
+faves
 end
 
 def find_greater_pair(src)
