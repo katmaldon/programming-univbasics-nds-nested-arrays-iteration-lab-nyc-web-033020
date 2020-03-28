@@ -11,8 +11,14 @@ faves
 end
 
 def find_greater_pair(src)
-  src = [ :group1[1, 5] :group2[34,11]]
-  srcg = [group1.max, group2.max]
+  greater_num = []
+  r_i = 0
+  while r_i < src.length do
+    inner_array = src[r_i]
+  greater_num << inner_array.max
+  r_i += 1
+  end
+  greater_num
 end
 
 def total_even_pairs(src)
