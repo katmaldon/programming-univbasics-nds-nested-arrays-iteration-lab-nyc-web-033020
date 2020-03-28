@@ -33,5 +33,6 @@ def total_even_pairs(src)
     total3 = n3[0]+n1[1]
     puts total3
   else NIL
+  end 
 
 end
