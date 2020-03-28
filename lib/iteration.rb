@@ -22,19 +22,14 @@ def find_greater_pair(src)
 end
 
 def total_even_pairs(src)
-  src = [ :n1[5, 4], :n2[6, 9], :n3[1,1] ]
-  if  n1%1==0 && n1.to_i.even?
-    total1 = n1[0]+n1[1]
-    puts total1
-    elsif 
-    n%1==0 && n2.to_i.even?
-    total2 = n2[0]+n2[1]
-    puts total2
-    elsif 
-    n%1==0 && n3.to_i.even?
-    total3 = n3[0]+n1[1]
-    puts total3
-  else NIL
-  end 
-
-end
+  total = 0
+  r_i = 0
+  while r_i < src.length do
+    inner_array = src[r_i]
+    if inner_array[0] % 2 == 0 && inner_array[1] % 2 == 0
+      total += inner_array[0] + inner_array[1]
+    end
+  r_i += 1
+  end
+  total
+end	
